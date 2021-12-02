@@ -46,7 +46,7 @@ class Pantallas {
       surface.setSize(550, 620);
       texto.mostrar(19);
       j.dibujar();
-  j.actualizar();
+      j.actualizar();
       texto.vida(j.vidas);
       texto.puntos(j.puntos);
       //if (j.puntos >= 100) {
