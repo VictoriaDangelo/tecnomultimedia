@@ -85,4 +85,19 @@ class Juego {
     }
     bolsa.reinicio();
   }
+  //----------- RETURNS -----------
+  boolean PuntajeEsMayorACien() {
+    if (puntos >= 100) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  boolean CeroVidas() {
+    if (vidas <= 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
