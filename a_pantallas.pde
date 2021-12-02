@@ -46,15 +46,18 @@ class Pantallas {
       surface.setSize(550, 620);
       texto.mostrar(19);
       j.dibujar();
-      j.actualizar();
+  j.actualizar();
       texto.vida(j.vidas);
       texto.puntos(j.puntos);
-      if (j.puntos >= 100) {
+      //if (j.puntos >= 100) {
+      if (j.PuntajeEsMayorACien()) {
         estado = "ganar";
         ganar.play();
-      } else if (j.vidas <= 0) {
+        //} else if (j.vidas <= 0) {
+      } else if (j.CeroVidas()) {
         estado = "perder";
         perder.play();
+      }
       }
     } else if (estado == "ganar") {
       surface.setSize(550, 620);
