@@ -58,7 +58,6 @@ class Pantallas {
         estado = "perder";
         perder.play();
       }
-      }
     } else if (estado == "ganar") {
       surface.setSize(550, 620);
       texto.mostrar(22);
